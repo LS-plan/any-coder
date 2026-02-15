@@ -1,0 +1,15 @@
+{
+  "name": "any-coder",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Single-host Tailscale Win10 remote workspace MVP",
+  "type": "module",
+  "scripts": {
+    "server": "node apps/server/index.mjs",
+    "hash-password": "node apps/server/scripts/hash-password.mjs",
+    "check": "node --check apps/server/index.mjs && node --check apps/server/scripts/hash-password.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
